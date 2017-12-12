@@ -45,6 +45,10 @@
 
 ;; variables
 
+;; Emacs tries to indent the offset when opening a python buffer. It's an
+;; annoying error message, so just putting this here.
+(setq python-indent-guess-indent-offset nil)
+
 (defcustom ob-ipython-kernel-extra-args '()
   "List of extra args to pass when creating a kernel."
   :group 'ob-ipython)
